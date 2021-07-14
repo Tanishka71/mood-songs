@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+     <meta charset="utf-8">
+     <meta name="description" content="Song picker">
+     <meta name="keywords" content="mood ,song">
+     <title>Mood song picker</title>
+    </head>
+    <style>
+      body {
+          background: lavender;
+          padding: 40px;
+          font-size: 40px;
+          font-family: 'Courier New', Courier, monospace;
+      }
+      a {
+        color:palevioletred;
+      }
+    </style>
+    <script>
+    var mood = new Array ("savage",
+                        "happy",
+                        "melancoly",
+                        "moody",
+                        "badass");
+    var songs = new Array ("https://music.youtube.com/watch?v=Bc9ijogGmtU&feature=share",
+                          "https://music.youtube.com/watch?v=OsfAnsMY21M&feature=share",
+                          "https://music.youtube.com/watch?v=cULQhvuq1Zc&feature=share",
+                          "https://music.youtube.com/watch?v=y-C5cM_0KVE&feature=share",
+                          "https://music.youtube.com/watch?v=ZD6rXLXZOEI&feature=share");
+    var r =Math.floor(Math.random()*mood.length);
+    document.write("<h1>You are feeling " +mood[r]+ " here is a <a href=" +songs[r]+ " target=_blank > song </a> for you.</h1>");
+    </script>
+    <body>
+   <!--contents of the page will display here.-->
+   <img src="abstrat.jpeg" alt="background">
+    </body>
+</html>
